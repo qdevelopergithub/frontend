@@ -78,7 +78,7 @@ const AddNewMovie = () => {
                 poster: icon
             };
             try {
-                const response = await fetch('http://localhost:3000/movie', {
+                const response = await fetch('https://movie-demo.azurewebsites.net/movie', {
                     method: 'POST',
                     headers: {
                         'Authorization': `Bearer ${token}`,

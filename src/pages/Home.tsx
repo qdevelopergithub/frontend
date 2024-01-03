@@ -11,7 +11,7 @@ const Home = () => {
     const fetchMovies = async () => {
       try {
         // Make GET request using axios
-        const response = await axios.get('http://localhost:3000/movies?page=1', {
+        const response = await axios.get('https://movie-demo.azurewebsites.net/movies?page=1', {
           headers: {
             'accept': '*/*',
             'Authorization':`Bearer ${token}`, // Replace with your access token

@@ -84,7 +84,7 @@ const EditfFrom = () => {
         };
 
         try {
-            const response = await axios.put(`http://localhost:3000/movie/${item.id}`, updatedMovie, {
+            const response = await axios.put(`https://movie-demo.azurewebsites.net/${item.id}`, updatedMovie, {
                 headers: {
                     'accept': '*/*',
                     'Authorization': `Bearer ${token}`,

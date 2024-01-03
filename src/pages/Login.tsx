@@ -32,7 +32,7 @@ const Login = () => {
         if (!emailError && !passwordError) {
             try {
                 // Make POST request using axios
-                const response = await axios.post('http://localhost:3000/login', {
+                const response = await axios.post('https://movie-demo.azurewebsites.net/login', {
                     email,
                     password
                 });
